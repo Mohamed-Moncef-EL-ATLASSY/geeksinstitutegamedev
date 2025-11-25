@@ -1,0 +1,11 @@
+Project Notes
+
+Initial notes file created for learning purposes.
+Will be updated with progress and learnings.
+
+Day 1 - Git Basics:
+- Initialized a git repository
+- Added about.txt and goals.txt to staging
+- Made first commit
+- Working with notes.txt file
+- Learning git workflow and version control

@@ -1,0 +1,7 @@
+Project Goals
+
+1. Master Git initialization and repository management
+2. Understand staging and committing changes
+3. Learn how to work with git logs
+4. Practice version control workflows
+5. Build confidence with command-line git operations
