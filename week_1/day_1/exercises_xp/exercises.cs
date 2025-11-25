@@ -14,7 +14,7 @@ class Exercise2
     {
         string name = "Mohamed Moncef EL ATLASSY";
         int age = 23;
-        
+
         Console.WriteLine("My name is " + name + " and I am " + age + " years old.");
     }
 }
@@ -26,7 +26,7 @@ class Exercise3
         int num1 = 10;
         int num2 = 5;
         int sum = num1 + num2;
-        
+
         Console.WriteLine("num1: " + num1);
         Console.WriteLine("num2: " + num2);
         Console.WriteLine("Sum: " + sum);
@@ -38,7 +38,7 @@ class Exercise4
     static void Main4()
     {
         int userAge = 20;
-        
+
         if (userAge >= 18)
         {
             Console.WriteLine("Access Granted.");
@@ -55,13 +55,13 @@ class Exercise5
     static void Main5()
     {
         int countdown = 10;
-        
+
         while (countdown >= 1)
         {
             Console.WriteLine(countdown);
             countdown--;
         }
-        
+
         Console.WriteLine("Liftoff!");
     }
 }
@@ -72,7 +72,7 @@ class Exercise6
     {
         Console.WriteLine("Hello, " + name + "!");
     }
-    
+
     static void Main6()
     {
         SayHello("Mohamed");
@@ -96,5 +96,121 @@ class Exercise7
                 Console.WriteLine("Number " + i + " is Odd");
             }
         }
+    }
+}
+
+
+class Exercise8
+{
+    static void Main8()
+    {
+        Console.Write("Enter temperature in Celsius: ");
+        double celsius = double.Parse(Console.ReadLine());
+        double fahrenheit = celsius * 9 / 5 + 32;
+
+        Console.WriteLine(celsius + "C = " + fahrenheit + "F");
+    }
+}
+
+class Exercise9
+{
+    static void Main9()
+    {
+        int a = 10;
+        int b = 20;
+
+        Console.WriteLine("Before swap: a = " + a + ", b = " + b);
+
+        int c = a;
+        a = b;
+        b = c;
+
+        Console.WriteLine("After swap: a = " + a + ", b = " + b);
+    }
+}
+
+class Exercise10
+{
+    static void Main10()
+    {
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Multiplication table for " + number + ":");
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(number + " x " + i + " = " + (number * i));
+        }
+    }
+}
+
+
+class FizzBuzz
+{
+    static void MainFizzBuzz()
+    {
+        Console.Write("Enter a number between 1 and 100: ");
+        if (!int.TryParse(Console.ReadLine(), out int number))
+        {
+            Console.WriteLine("Invalid input!");
+            return;
+        }
+
+        if (number < 1 || number > 100)
+        {
+            Console.WriteLine("Please enter a number between 1 and 100!");
+            return;
+        }
+
+        if (number % 15 == 0)
+        {
+            Console.WriteLine("FizzBuzz");
+        }
+        else if (number % 3 == 0)
+        {
+            Console.WriteLine("Fizz");
+        }
+        else if (number % 5 == 0)
+        {
+            Console.WriteLine("Buzz");
+        }
+        else
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
+
+class TrianglePattern
+{
+    static void MainTriangle()
+    {
+        Console.WriteLine("Triangle Pattern:");
+        for (int i = 1; i <= 5; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+class ReverseWord
+{
+    static void MainReverse()
+    {
+        Console.Write("Enter a word: ");
+        string word = Console.ReadLine();
+
+        string reversed = "";
+        for (int i = word.Length - 1; i >= 0; i--)
+        {
+            reversed += word[i];
+        }
+
+        Console.WriteLine("Original: " + word);
+        Console.WriteLine("Reversed: " + reversed);
     }
 }
