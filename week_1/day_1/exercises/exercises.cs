@@ -1,5 +1,4 @@
-using System;
-
+// Exercises
 class Exercise1
 {
     static void Main1()
@@ -99,7 +98,6 @@ class Exercise7
     }
 }
 
-
 class Exercise8
 {
     static void Main8()
@@ -145,72 +143,57 @@ class Exercise10
 }
 
 
-class FizzBuzz
+//Challenges
+class Challenge1
 {
-    static void MainFizzBuzz()
+    static void MainChallenge1()
     {
-        Console.Write("Enter a number between 1 and 100: ");
-        if (!int.TryParse(Console.ReadLine(), out int number))
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+        
+        Console.Write("Enter length: ");
+        int length = int.Parse(Console.ReadLine());
+        
+        List<int> multiples = new List<int>();
+        
+        for (int i = 1; i <= length; i++)
         {
-            Console.WriteLine("Invalid input!");
-            return;
+            multiples.Add(number * i);
         }
-
-        if (number < 1 || number > 100)
+        
+        Console.Write("Result: ");
+        for (int i = 0; i < multiples.Count; i++)
         {
-            Console.WriteLine("Please enter a number between 1 and 100!");
-            return;
-        }
-
-        if (number % 15 == 0)
-        {
-            Console.WriteLine("FizzBuzz");
-        }
-        else if (number % 3 == 0)
-        {
-            Console.WriteLine("Fizz");
-        }
-        else if (number % 5 == 0)
-        {
-            Console.WriteLine("Buzz");
-        }
-        else
-        {
-            Console.WriteLine(number);
-        }
-    }
-}
-
-class TrianglePattern
-{
-    static void MainTriangle()
-    {
-        Console.WriteLine("Triangle Pattern:");
-        for (int i = 1; i <= 5; i++)
-        {
-            for (int j = 0; j < i; j++)
+            if (i < multiples.Count - 1)
             {
-                Console.Write("*");
+                Console.Write(multiples[i] + ", ");
             }
-            Console.WriteLine();
+            else
+            {
+                Console.WriteLine(multiples[i]);
+            }
         }
     }
 }
 
-class ReverseWord
+class Challenge2
 {
-    static void MainReverse()
+    static void MainChallenge2()
     {
-        Console.Write("Enter a word: ");
-        string word = Console.ReadLine();
-
-        string reversed = "";
-        for (int i = word.Length - 1; i >= 0; i--)
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+        
+        string result = "";
+        
+        for (int i = 0; i < input.Length; i++)
         {
-            reversed += word[i];
+            if (i == 0 || input[i] != input[i - 1])
+            {
+                result += input[i];
+            }
         }
-
-        Console.WriteLine("Original: " + word);
-        Console.WriteLine("Reversed: " + reversed);
+        
+        Console.WriteLine("Input: " + input);
+        Console.WriteLine("Output: " + result);
     }
 }
