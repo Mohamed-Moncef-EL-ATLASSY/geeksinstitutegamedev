@@ -1,0 +1,52 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime
+*.log
+*.cache
+*.pdb
+*.dll
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+
+# Task manager data
+tasks.json
+
+# packages (legacy)
+packages/
+
+# Ignore publish outputs
+publish/
+
+# Optional: Ignore JetBrains Rider caches
+.idea/
+
+# Test results
+TestResults/
+
+# coverage
+coverage/
