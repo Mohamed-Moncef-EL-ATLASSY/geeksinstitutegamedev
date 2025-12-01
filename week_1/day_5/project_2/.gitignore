@@ -1,0 +1,24 @@
+# Build
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# data
+transactions.json
+
+# logs
+*.log
+
+# publish
+publish/
+
+# Rider
+*.sln.iml
