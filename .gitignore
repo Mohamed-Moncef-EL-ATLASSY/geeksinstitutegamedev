@@ -1,1 +1,91 @@
+# ===== Universal Unity .gitignore (root) =====
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.sln.iml
+
+# Unity generated directories (do not commit)
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Auto-generated project files
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Crash reports
+*.stackdump
+
+# Package Manager
+Packages/packages-lock.json
+
+# Addressables build artifacts (keep your source data, ignore outputs)
+Assets/AddressableAssetsData/*/Windows/*
+Assets/AddressableAssetsData/*/Android/*
+Assets/AddressableAssetsData/*/iOS/*
+Assets/StreamingAssets/aa/*
+
+# Visual Studio / Rider / temp
+ExportedObj/
+*.bak
+*.tmp
+*.swp
+*.asmdef.meta
+/.idea
+*.ipr
+*.iws
+
+# Platform build outputs
+*.apk
+*.aab
+*.ipa
+*.xcodeproj/
+DerivedData/
+
+# Lightmap and GI snapshots
+LightmapSnapshot.asset
+
+# TextMeshPro auto-generated resources
+Assets/TextMesh Pro/*/Resources/*
+
+# Unity Cloud / Collaborate
+UnityPackageManager/
+Collab/*
+
+# Cache Server / local settings (do not version)
+.csproj.DotSettings
+ProjectSettings/EditorSettings.asset
+
+# Logs and misc
+*.log
+*.orig
+*.merge
+*.diff
+
+# Publish outputs
+publish/
+
+# Keep meta and ProjectSettings (DO NOT IGNORE)
+#!*.meta
+#!ProjectSettings/
+
+# Repo-specific: ignore draft workspace
 /draft
